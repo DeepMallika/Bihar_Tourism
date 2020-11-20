@@ -10,9 +10,7 @@ class Mybooking extends StatefulWidget {
 
 class _MybookingState extends State<Mybooking> {
   Map data;
-  int index;
-  List<String> items= ["Maurya Hotel","Gargee Gautam Viahr Place","Grand Place"];
-  showData() async{
+   showData() async{
     try{
   // ignore: deprecated_member_use
   CollectionReference collectionReference= await Firestore.instance.collection('Hotel');
@@ -114,35 +112,6 @@ class _MybookingState extends State<Mybooking> {
           // ignore: missing_return
           builder: (context, snapshot){
             if(snapshot.hasData){
-              return ListView.builder(
-                // ignore: deprecated_member_use
-                itemCount: items.length,
-                itemBuilder: (context,index){
-                 return Dismissible(
-                   background: Container(color:Colors.blue),
-                   secondaryBackground:  Container(color:Colors.red,child:Icon(Icons.delete),),
-                   onResize: (){
-                     debugPrint('Being dismissed');
-                   },
-                   key:Key("${items[index]}Id"),
-                   onDismissed:(direction){
-                     setState((){
-                       // ignore: deprecated_member_use
-                      items.removeAt(index);
-                     });
-                   },
-                   // ignore: deprecated_member_use
-
-                   child:ListTile(
-                     leading: Icon(FontAwesomeIcons.bookmark,color:Colors.deepOrange),
-                     // ignore: missing_return, deprecated_member_use, missing_return
-                     title: Text("${items.elementAt(index)}"),
-                   ),
-                 );
-                },
-              );
-            }
-            /*{
             if (snapshot.connectionState == ConnectionState.waiting) {
               return Center(
                 child: CircularProgressIndicator(),
@@ -170,7 +139,7 @@ class _MybookingState extends State<Mybooking> {
                       ),
                     );
                   }).toList());
-            }*/
+            }
           }
 
         ),
