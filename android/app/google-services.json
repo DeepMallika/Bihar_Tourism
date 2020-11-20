@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "678180288934",
+    "firebase_url": "https://bihar-tourism-868c6.firebaseio.com",
+    "project_id": "bihar-tourism-868c6",
+    "storage_bucket": "bihar-tourism-868c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678180288934:android:4c79fc658e37627d6bf767",
+        "android_client_info": {
+          "package_name": "com.example.lstrv_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678180288934-iie5v5m6rf5rjmhif8s91v09dk62tn5t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lstrv_app",
+            "certificate_hash": "4a4b9e4c8f76159da8e9a2965bd32109fab8e7dc"
+          }
+        },
+        {
+          "client_id": "678180288934-rje8n53pnsr032c54g1hshelpr9pmpjs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU6UM4DNu9sNDtqjwsU21JZrFjLIZj520"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678180288934-rje8n53pnsr032c54g1hshelpr9pmpjs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
