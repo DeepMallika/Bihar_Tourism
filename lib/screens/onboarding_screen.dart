@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:lstrv_app/screens/splash_screen.dart';
+import 'package:lstrv_app/pages/login.dart';
 import 'package:lstrv_app/utils/style.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -290,7 +290,7 @@ Widget build(BuildContext context) {
       color: Colors.black,
       child: GestureDetector(
         onTap: () {
-          Navigator.push(context,MaterialPageRoute(builder: (context) => SplashScreen()));
+          Navigator.push(context,MaterialPageRoute(builder: (context) => LoginUI()));
         },
         child: Center(
           child: Text(
